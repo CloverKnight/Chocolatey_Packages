@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>visualstudiocode.portable</id>
@@ -27,8 +27,29 @@ Visual Studio Code is a lightweight but powerful source code editor which runs o
 * **Print statement debugging is a thing of the past:** Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.
 * **Git commands built-in:** Working with Git has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted Git service.
 * **Extensible and customizable:** Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor.</description>
+    <releaseNotes>Welcome to the first 2017 release of Visual Studio Code. There are a number of significant updates in this version that we hope you will like, some of the key highlights include:
 
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+* **New Welcome page** - Whether you are a new or returning user, the Welcome page helps get you started quickly.
+* **Interactive Playground** - Try out VS Code's advanced editing features without creating files or a project.
+* **Synchronized Markdown Preview** - Coupled view of a Markdown preview and its editor.
+* **Format on Paste** - Format source code as soon as you bring it into your project.
+* **Language specific settings** - Customize your settings for specific languages.
+* **TypeScript references CodeLens** - VS Code ships with TypeScript 2.1.5 and now includes References CodeLens.
+* **Single file debugging** - Debug without a configuration file to enable quick debugging of single files.
+* **Inline variables display** - See variable values inline while debugging.
+* **Expanded Node.js debugging configurations** - Easily debug Mocha tests, gulp tasks and even Yeoman generators.
+* **Improved task running support** - Run multiple commands from the same task.
+* **Faster Integrated Terminal** - We improved the integrated terminal's performance and Windows support.
+
+The release notes are arranged in the following sections related to VS Code focus areas. Here are some further updates:
+
+* **Workbench** - New settings to control new windows, improved Tabbed headings, Zen Mode customization.
+* **Editor** - Add keyboard shortcut keys for snippets, Go to Implementation, fast search navigation.
+* **Languages** - Emmet abbreviations from external files, HTML format settings, Markdown editing improvements.
+* **Extensions** - Create Extension Packs through the VS Code Yeoman generator.
+* **Debugging** - User level launch.json, copy callstack action.
+* **Node.js Debugging** - Just My Code improvements, restart support for launch configurations.
+* **Extension Authoring** - New insertSnippet API, openTextDocument can now take language.</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.0.4" />
       <dependency id="dotnet4.5.2" version="4.5.2" />
