@@ -3,7 +3,7 @@
   <metadata>
     <id>nodejs.portable</id>
     <title>nodejs.portable</title>
-    <version>6.10.1</version>
+    <version>6.10.2</version>
     <owners>Alex Ireland</owners>
     <authors>Node.js Foundation</authors>
     <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
@@ -13,29 +13,46 @@
 	<packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/nodejs.portable</packageSourceUrl>
     <projectSourceUrl>https://github.com/nodejs</projectSourceUrl>
     <tags>Node.js nodejs node nodejs.portable javascript npm FOSS</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!-- =============================== -->      
+    <summary>Node JS Portable</summary>
+    <description>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. 
+Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. 
+Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</description>
+    <releaseNotes>## 2017-04-04, Version 6.10.2 'Boron' (LTS), @MylesBorins
 
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-      <dependency id="chocolatey-uninstall.extension" />
-    </dependencies>-->
-    <!-- chocolatey-uninstall.extension - If supporting 0.9.9.x (or below) and including a chocolateyUninstall.ps1 file to uninstall an EXE/MSI, you probably want to include chocolatey-uninstall.extension as a dependency. Please verify whether you are using a helper function from that package. -->
+This is a special LTS to fix a number of regressions that were found on the 6.10.x release line.
 
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+This includes:
+
+a fix for memory leak in the crypto module that was introduced in 6.10.1
+a fix for a regression introduced to the windows repl in 6.10.0
+a backported fix for V8 to stop a segfault that could occur when using spread syntax
+It also includes an upgrade to zlib 1.2.11 to fix a number of low severity CVEs that were present in zlib 1.2.8.
+
+## Notable changes
+
+*crypto:
+  *fix memory leak if certificate is revoked (Tom Atkinson) #12089
+*deps:
+  *upgrade zlib to 1.2.11 (Sam Roberts) #10980
+  *backport V8 fixes for spread syntax regression causing segfaults (Michaël Zasso) #12037
+*repl:
+  *Revert commit that broke REPL display on Windows (Myles Borins) #12123
+
+## Commits
+
+*[5f644d2f6f] - crypto: fix memory leak if certificate is revoked (Tom Atkinson) #12089
+*[912f78a566] - deps: fix CLEAR_HASH macro to be usable as a single statement (Sam Roberts) #11616
+*[abe9132011] - deps: upgrade zlib to 1.2.11 (Sam Roberts) #10980
+*[1ff512c185] - deps: backport e427300 from upstream V8 (Michaël Zasso) #12037
+*[8dfc710a06] - deps: cherry-pick b9f682b from upstream V8 (Michaël Zasso) #12037
+*[52bdb8f246] - deps: backport 2cabc86 from upstream V8 (Michaël Zasso) #12037
+*[64fc5a4541] - repl Revert: "Revert "repl: disable Ctrl+C support..." (Myles Borins) #12123</releaseNotes> -->
+   
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
   </metadata>
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
