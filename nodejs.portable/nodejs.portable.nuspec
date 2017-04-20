@@ -6,7 +6,7 @@
     <version>6.10.2</version>
     <owners>Alex Ireland</owners>
     <authors>Node.js Foundation</authors>
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
+    <projectUrl>https://nodejs.org/en/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/ba5adf020e09cd0e51107206ef3ec390035a6e90/icons/nodejs.png</iconUrl>
     <copyright>2017 Node.js Foundation</copyright>
 	<licenseUrl>https://raw.githubusercontent.com/nodejs/node/master/LICENSE</licenseUrl>
@@ -46,8 +46,15 @@ It also includes an upgrade to zlib 1.2.11 to fix a number of low severity CVEs 
 *[1ff512c185] - deps: backport e427300 from upstream V8 (Michaël Zasso) #12037
 *[8dfc710a06] - deps: cherry-pick b9f682b from upstream V8 (Michaël Zasso) #12037
 *[52bdb8f246] - deps: backport 2cabc86 from upstream V8 (Michaël Zasso) #12037
-*[64fc5a4541] - repl Revert: "Revert "repl: disable Ctrl+C support..." (Myles Borins) #12123</releaseNotes> -->
-   
+*[64fc5a4541] - repl Revert: "Revert "repl: disable Ctrl+C support..." (Myles Borins) #12123
+
+## Package Specific
+
+The following package parameters can be set:
+ * `/InstallationPath` - Where to unzip the package. Defaults to Chocolatey Tools folder.
+
+These parameters can be passed to the installer with the use of `--package-parameters`.
+For example: `--package-parameters "/InstallationPath:'C:\Users\User\Documents\NodeJS "`.</releaseNotes>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
