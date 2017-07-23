@@ -3,11 +3,11 @@
   <metadata>
     <id>visualstudiocode.portable</id>
     <title>visualstudiocode.portable</title>
-    <version>1.10.2</version>
+    <version>1.14.2</version>
     <owners>Alex Ireland</owners>
     <authors>Microsoft</authors>
     <projectUrl>https://code.visualstudio.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/db78e656a60aca25d4faddbe60721094609b846f/icons/visualstudiocode.png</iconUrl>
+    <iconUrl>https://code.visualstudio.com/images/favicon.ico</iconUrl>
     <copyright>2017 Microsoft</copyright>
     <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
     <packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/visualstudiocode.portable</packageSourceUrl>
@@ -15,7 +15,7 @@
     <docsUrl>https://code.visualstudio.com/docs</docsUrl>
     <tags>Microsoft vscode visualstudiocode visualstudiocode.portable editor ide cross-platform FOSS</tags>
     <summary>Visual Studio Code Portable</summary>
-    <description>Code editing.
+<description>Code editing.
 Redefined.
 Free. Open source. Runs everywhere.
 
@@ -34,32 +34,29 @@ The following package parameters can be set:
  * `/InstallationPath` - Where to unzip the package. Defaults to Chocolatey Tools folder.
 
 These parameters can be passed to the installer with the use of `--package-parameters`.
-For example: `--package-parameters "/InstallationPath:'C:\Users\User\Documents\VSCode "`.</description>
-	<releaseNotes>Welcome to the February 2017 release of Visual Studio Code. There are a number of significant updates in this version that we hope you will like, some of the key highlights include:
+For example: `--package-parameters="/InstallationPath:'C:\Users\User\Documents\VSCode'"`.</description>
+	<releaseNotes>Welcome to the June 2017 release of Visual Studio Code. There are a number of significant updates in this version that we hope you will like, some of the key highlights include:
 
-* **Preview: Minimap** - Get a 10,000 foot view of your code with Minimap.
-* **Preview: Drag and Drop in the editor** - Easily drag and drop text around the editor.
-* **Copy text with formatting** - Copy code examples with full syntax highlighting.
-* **Auto generate JSDoc** - Simply type /** to generate JSDoc comments for your functions.
-* **File Explorer key bindings** - You can now create shortcuts for the Explorer and other list/tree UI.
-* **Official Linux repositories** - VS Code supports auto-updating packages on Linux.
-* **Improved Exception view** - Easily view exception details in the debugger.
-* **Column breakpoints** - Set multiple breakpoints on the same line of source code.
-* **Links in the Terminal** - Integrated Terminal output links streamline the workflow between editor and commands.
-* **Keybinding support for tasks** - Assign keyboard shortcuts to commonly used tasks.
-* **HTML DOM navigation** - Quickly navigate to DOM elements by id and class name.
-* **Language specific default settings** - Appropriate default settings for Go, Make, YAML and Markdown.
+* **Integrated Terminal improvements** - Find support, select/copy multiple pages.
+* **Command Palette MRU list** - Quickly find and run your recently used commands.
+* **New Tasks menu** - Top-level Tasks menu for running builds and configuring the task runner.
+* **Automatic indentation** - Auto indent while typing, moving, and pasting source code.
+* **Emmet abbreviation enhancements** - Add Emmet to any language. Multi-cursor support.
+* **New Diff review pane** - Navigate Diff editor changes quickly with F7, displayed in patch format.
+* **Angular debugging recipe** - Debug your Angular client in VS Code.
+* **Better screen reader support** - Aria properties to better present list and drop-down items.
+* **Preview: 64 bit Windows build** - Try out the Windows 64 bit version (Insiders build).
+* **Preview: Multi-root workspaces** - Open multiple projects in the same editor (Insiders build).
 
 The release notes are arranged in the following sections related to VS Code focus areas. Here are some further updates:
 
-* **Editor** - Word wrap settings simplification, manually trigger Save actions, new cursor styles.
-* **Workbench** - Configurable window title, run either selected text or entire file from the Integrated Terminal.
-* **Languages** - TypeScript 2.2, disable color preview decorators, better link navigation in Markdown.
-* **Debugging** - Launch debugger using just the keyboard, new variable syntax.
-* **Tasks** - Run tasks in separate terminals, new ${lineNumber} variable.
-* **Extension Authoring** - Pluggable SCM provider, Modal message dialogs, provide language specific settings.</releaseNotes>
+* **Workbench** - Restore loose files, quickly switch running windows (instances).
+* **Languages** - TypeScript 2.4, more relevant suggestions in JavaScript files.
+* **Debugging** - Simplifications for Node.js debug configurations.
+* **Tasks** - Auto-detect and customize npm scripts and TypeScript compiler to run in VS Code.
+* **Extension Authoring** - SVG rendering constraints, custom views visibility, new Debug API.</releaseNotes>
     <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
+<dependency id="chocolatey-core.extension" version="1.1.0" />
       <dependency id="dotnet4.5.2" version="4.5.2" />
     </dependencies>
   </metadata>
