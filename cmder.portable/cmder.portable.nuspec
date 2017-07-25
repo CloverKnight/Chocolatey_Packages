@@ -3,22 +3,50 @@
   <metadata>
     <id>cmder.portable</id>
     <title>cmder.portable</title>
-    <version>__REPLACE__</version>
-    <owners>__REPLACE_YOUR_NAME__</owners>
-    <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/electron.portable.png</iconUrl>
-	<copyright></copyright>
-	<licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-	<packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-	<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>
-    <tag></tag>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes>cs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <version>1.3.2</version>
+    <owners>Alex Ireland</owners>
+    <authors>Samuel Vasko</authors>
+    <projectUrl>http://cmder.net</projectUrl>
+    <iconUrl>https://github.com/cmderdev/cmder/blob/master/icons/icon_16.png</iconUrl>
+	  <copyright>Copyright (c) 2016 Samuel Vasko</copyright>
+	  <licenseUrl>https://github.com/cmderdev/cmder#license</licenseUrl>
+	  <packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/cmder.portable</packageSourceUrl>
+	  <projectSourceUrl>https://github.com/cmderdev/cmder</projectSourceUrl>
+    <tags>cmder conemu clink terminal git</tags>
+    <summary>Cmder Portable Console</summary>
+    <description>Cmder is a software package created out of pure frustration over absence of usable console emulator on Windows. It is based on ConEmu with major config overhaul, comes with a Monokai color scheme, amazing clink (further enhanced by clink-completions) and a custom prompt layout.
     
-	<dependencies>
-	  <dependency id="chocolatey-core.extension" version="1.1.0" />
+## Package Specific
+
+The following package parameters can be set:
+ * `/InstallationPath` - Where to unzip the package. Defaults to Chocolatey Tools folder.
+
+These parameters can be passed to the installer with the use of `--package-parameters`.
+For example: `--package-parameters="/InstallationPath:'C:\Users\User\Documents\VSCode'"`.</description>
+    <releaseNotes>Updated components:
+
+* Git: v2.11.0.windows.1
+* ConEmu: 161022
+* Clink: 0.4.8
+* Clink-Completions: 0.3.2
+
+Fixed bugs:
+
+* Git process not ending. #1060
+* Git: fatal: Unable to create '.git/index.lock': File exists. #1044
+* Aliases with environment variables not working #684
+* msysgit is not injected into path. #493
+* cmder display error #491
+* Path issues on startup #487
+* Missing DLL: MSVCP140.dll #482
+* Single mode does not set current directory #420
+* Fails to parse path in PATH system variable with [ampersand] #185
+* Cmder hangs after idling for a few minutes or when clicking above the cursor #109
+* No color scheme in tabs opened as Administrator #94
+* Bug in alias.bat #52
+* Clicking/selecting text on terminal causes slowdown #40</releaseNotes>    
+	  <dependencies>
+	    <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>

@@ -7,11 +7,12 @@
 	  <owners>Alex Ireland</owners>
 	  <authors>GitHub Inc</authors>
     <projectUrl>https://electron.atom.io/</projectUrl>
-	  <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/electron.portable.png</iconUrl>
+	  <iconUrl></iconUrl>
 	  <copyright>Copyright (c) 2013-2017 GitHub Inc.</copyright>
 	  <licenseUrl>https://github.com/electron/electron/blob/master/LICENSE</licenseUrl>
 	  <packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/electron.portable</packageSourceUrl>
 	  <projectSourceUrl>https://github.com/electron</projectSourceUrl>
+    <docsUrl>https://electron.atom.io/docs/</docsUrl>
     <tags>atom web development electron github</tags>
     <summary>Electron Portable</summary>
     <description>The Electron framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS. It is based on Node.js and Chromium and is used by the Atom editor and many other apps.
@@ -40,7 +41,7 @@ properly. #9586
 * Backported an upstream Chrome fix where the backspace character did not
 delete the last character in certain keyboard layouts. #9586</releaseNotes>
     <dependencies>
-	  <dependency id="chocolatey-core.extension" version="1.1.0" />
+	    <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
   </metadata>
   <files>

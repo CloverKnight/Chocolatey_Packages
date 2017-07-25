@@ -15,7 +15,7 @@
     <docsUrl>https://code.visualstudio.com/docs</docsUrl>
     <tags>Microsoft vscode visualstudiocode visualstudiocode.portable editor ide cross-platform FOSS</tags>
     <summary>Visual Studio Code Portable</summary>
-<description>Code editing.
+    <description>Code editing.
 Redefined.
 Free. Open source. Runs everywhere.
 
@@ -35,7 +35,7 @@ The following package parameters can be set:
 
 These parameters can be passed to the installer with the use of `--package-parameters`.
 For example: `--package-parameters="/InstallationPath:'C:\Users\User\Documents\VSCode'"`.</description>
-	<releaseNotes>Welcome to the June 2017 release of Visual Studio Code. There are a number of significant updates in this version that we hope you will like, some of the key highlights include:
+	  <releaseNotes>Welcome to the June 2017 release of Visual Studio Code. There are a number of significant updates in this version that we hope you will like, some of the key highlights include:
 
 * **Integrated Terminal improvements** - Find support, select/copy multiple pages.
 * **Command Palette MRU list** - Quickly find and run your recently used commands.
@@ -56,7 +56,7 @@ The release notes are arranged in the following sections related to VS Code focu
 * **Tasks** - Auto-detect and customize npm scripts and TypeScript compiler to run in VS Code.
 * **Extension Authoring** - SVG rendering constraints, custom views visibility, new Debug API.</releaseNotes>
     <dependencies>
-<dependency id="chocolatey-core.extension" version="1.1.0" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
       <dependency id="dotnet4.5.2" version="4.5.2" />
     </dependencies>
   </metadata>
