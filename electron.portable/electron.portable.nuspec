@@ -3,20 +3,42 @@
   <metadata>
     <id>electron.portable</id>
     <title>electron.portable</title>
-    <version>__REPLACE__</version>
-	<owners>__REPLACE_YOUR_NAME__</owners>
-	<authors></authors>
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-	<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/electron.portable.png</iconUrl>
-	<copyright></copyright>
-	<licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-	<packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>
-	<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>
-    <tag></tag>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes>
+    <version>1.6.11</version>
+	  <owners>Alex Ireland</owners>
+	  <authors>GitHub Inc</authors>
+    <projectUrl>https://electron.atom.io/</projectUrl>
+	  <iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/electron.portable.png</iconUrl>
+	  <copyright>Copyright (c) 2013-2017 GitHub Inc.</copyright>
+	  <licenseUrl>https://github.com/electron/electron/blob/master/LICENSE</licenseUrl>
+	  <packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/electron.portable</packageSourceUrl>
+	  <projectSourceUrl>https://github.com/electron</projectSourceUrl>
+    <tags>atom web development electron github</tags>
+    <summary>Electron Portable</summary>
+    <description>The Electron framework lets you write cross-platform desktop applications using JavaScript, HTML and CSS. It is based on Node.js and Chromium and is used by the Atom editor and many other apps.
 
+Follow @ElectronJS on Twitter for important announcements.
+
+This project adheres to the Contributor Covenant code of conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to electron@github.com.
+
+## Package Specific
+
+The following package parameters can be set:
+ * `/InstallationPath` - Where to unzip the package. Defaults to Chocolatey Tools folder.
+
+These parameters can be passed to the installer with the use of `--package-parameters`.
+For example: `--package-parameters="/InstallationPath:'C:\Users\User\Documents\Electron'"`.</description>
+    <releaseNotes>Bug Fixes
+
+* [SECURITY] Backported an upstream Node.js fix where StartCom and WoSign certificates
+are now rejected when making HTTPS requests. #9499
+* Fixed an issue where sandboxed renderer process would throw remote errors
+when reloaded. #9505
+* The built-in PDF viewer plugin is now disabled if the plugins setting
+is disabled on the BrowserWindow. #9564
+* Backported an upstream Chrome fix where media requests would not be cached
+properly. #9586
+* Backported an upstream Chrome fix where the backspace character did not
+delete the last character in certain keyboard layouts. #9586</releaseNotes>
     <dependencies>
 	  <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
