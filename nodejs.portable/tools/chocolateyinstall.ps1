@@ -2,18 +2,17 @@
 
 $pp                = Get-PackageParameters
 $packageName       = 'nodejs.portable'
+$zipPath           = Join-Path $(Split-Path $MyInvocation.MyCommand.Path) 'node-v6.11.1-win-x86.zip'
+$zipPath64         = Join-Path $(Split-Path $MyInvocation.MyCommand.Path) 'node-v6.11.1-win-x64.zip'
 $unzipDir 		     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url32 = https://nodejs.org/dist/v6.10.2/node-v6.10.2-win-x86.zip 
-$url64 = https://nodejs.org/dist/v6.10.2/node-v6.10.2-win-x64.zip 
-
 if($pp["InstallationPath"]) { $unzipDir = $pp["InstallationPath"] }
-        
+
 $packageArgs = @{
-  packageName   = $packageName
-  unzipLocation = $unzipDir
-  url           = $url32
-  url64bit		  = $url64
+  packageName    = $packageName
+  destination    = $unzipDir
+  fileFullPath   = $zipPath
+  fileFullPath64 = $zipPath64
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
