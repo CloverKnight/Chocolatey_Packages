@@ -7,7 +7,7 @@
 	  <owners>Alex Ireland</owners>
 	  <authors>GitHub Inc</authors>
     <projectUrl>https://electron.atom.io/</projectUrl>
-	  <iconUrl></iconUrl>
+	  <iconUrl>https://raw.githubusercontent.com/electron/electron-api-demos/master/assets/app-icon/png/1024.png</iconUrl>
 	  <copyright>Copyright (c) 2013-2017 GitHub Inc.</copyright>
 	  <licenseUrl>https://github.com/electron/electron/blob/master/LICENSE</licenseUrl>
 	  <packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/electron.portable</packageSourceUrl>

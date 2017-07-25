@@ -7,7 +7,7 @@
     <owners>Alex Ireland</owners>
     <authors>Samuel Vasko</authors>
     <projectUrl>http://cmder.net</projectUrl>
-    <iconUrl>https://github.com/cmderdev/cmder/blob/master/icons/icon_16.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/cmderdev/cmder/master/icons/icon_256.png</iconUrl>
 	  <copyright>Copyright (c) 2016 Samuel Vasko</copyright>
 	  <licenseUrl>https://github.com/cmderdev/cmder#license</licenseUrl>
 	  <packageSourceUrl>https://github.com/CloverKnight/Chocolatey_Packages/tree/master/cmder.portable</packageSourceUrl>
@@ -22,7 +22,7 @@ The following package parameters can be set:
  * `/InstallationPath` - Where to unzip the package. Defaults to Chocolatey Tools folder.
 
 These parameters can be passed to the installer with the use of `--package-parameters`.
-For example: `--package-parameters="/InstallationPath:'C:\Users\User\Documents\VSCode'"`.</description>
+For example: `--package-parameters="/InstallationPath:'C:\Users\User\Documents\Cmder'"`.</description>
     <releaseNotes>Updated components:
 
 * Git: v2.11.0.windows.1
